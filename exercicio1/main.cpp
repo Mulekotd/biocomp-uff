@@ -89,6 +89,7 @@ int main(void)
     }
 
     std::string dna; // Cadeia do DNA (5′ → 3′)
+
     int sequence = 1;
 
     // Extrai cada linha do dataset
@@ -97,7 +98,7 @@ int main(void)
         // 1o: Acha a cadeia antiparalela do DNA (3′ → 5′)
         std::string antiparallel = generateAntiparallel(dna);
 
-        // 2o: Inverte a cadeia antiparalela (5′ → 3′)
+        // 2o: Inverte a cadeia antiparalela
         std::reverse(antiparallel.begin(), antiparallel.end());
 
         // 3o: Encontra todos os palindromos maximais de tamanho k
@@ -112,7 +113,7 @@ int main(void)
 
             for (std::size_t i = 0; i < positions.size(); ++i)
                 std::print("{}{}", positions[i],
-                           i + 1 == positions.size() ? "\n" : ", ");
+                           (i + 1) == positions.size() ? "\n" : ", ");
         }
     }
 
