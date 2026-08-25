@@ -1,5 +1,21 @@
 # Biologia Computacional
 
+## Compilação e Execução
+
+O projeto usa CMake e procura automaticamente por diretórios no padrão
+`exercicioN` que contenham um `main.cpp`.
+
+```sh
+cmake -S . -B builds -DCMAKE_CXX_COMPILER=g++-15
+cmake --build builds
+```
+
+Os executáveis são gerados em `builds/bin/`. Exemplo de execução do primeiro exercício, passando o caminho do dataset como argumento:
+
+```sh
+./builds/bin/exercicio1 exercicio1/dataset.txt
+```
+
 ## Programação:
 
 - Introdução aos Princípios da biologia molecular: Vida, material genético, genes, mecânismos do DNA para gerar proteínas.

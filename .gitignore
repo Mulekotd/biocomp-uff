@@ -1,1 +1,4 @@
 /.vscode/
+
+# Artefatos gerados pelo CMake
+/builds/

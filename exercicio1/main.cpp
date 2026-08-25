@@ -67,9 +67,15 @@ std::unordered_map<std::string, std::vector<std::size_t>> findMaxDNAPalindromes(
     return palindromes;
 }
 
-int main(void)
+int main(int argc, char* argv[])
 {
-    const std::string path = "dataset.txt";
+    if (argc != 2)
+    {
+        std::println(std::cerr, "Uso: {} <caminho-do-dataset>", argv[0]);
+        return -1;
+    }
+
+    const std::string path = argv[1];
 
     int k;
 
