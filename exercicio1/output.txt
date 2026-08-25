@@ -1,0 +1,156 @@
+# Teste 1
+
+mulekotd@mulekotd:~/projects/biocomp-uff/exercicio1$ ./program
+Digite o valor de k (par e maior ou igual a 4): 4
+
+Sequência 1:
+Palíndromo: TATA | tamanho: 4 | posições: 62
+Palíndromo: ATAT | tamanho: 4 | posições: 63
+Palíndromo: AGCT | tamanho: 4 | posições: 37
+Palíndromo: GATC | tamanho: 4 | posições: 43
+Palíndromo: CGCG | tamanho: 4 | posições: 7
+
+Sequência 2:
+Palíndromo: CGCG | tamanho: 4 | posições: 54
+Palíndromo: GCGC | tamanho: 4 | posições: 53
+Palíndromo: TCGA | tamanho: 4 | posições: 46
+Palíndromo: TATA | tamanho: 4 | posições: 23, 35
+Palíndromo: ATAT | tamanho: 4 | posições: 22
+
+Sequência 3:
+Palíndromo: GCGC | tamanho: 4 | posições: 120
+Palíndromo: TCGA | tamanho: 4 | posições: 113
+Palíndromo: TATA | tamanho: 4 | posições: 62, 90, 102
+Palíndromo: ATAT | tamanho: 4 | posições: 63, 89
+Palíndromo: AGCT | tamanho: 4 | posições: 37
+Palíndromo: GATC | tamanho: 4 | posições: 43
+Palíndromo: CGCG | tamanho: 4 | posições: 7, 121
+
+Sequência 4:
+Palíndromo: TGCA | tamanho: 4 | posições: 875
+Palíndromo: CTAG | tamanho: 4 | posições: 776, 892, 940
+Palíndromo: TTAA | tamanho: 4 | posições: 25, 89, 163, 547, 716, 730, 845
+Palíndromo: GCGC | tamanho: 4 | posições: 94, 584
+Palíndromo: GATC | tamanho: 4 | posições: 436
+Palíndromo: CGCG | tamanho: 4 | posições: 585
+Palíndromo: ATAT | tamanho: 4 | posições: 203, 240, 281, 519, 521, 1004
+Palíndromo: GGCC | tamanho: 4 | posições: 261, 420
+Palíndromo: AGCT | tamanho: 4 | posições: 774
+Palíndromo: TATA | tamanho: 4 | posições: 204, 784, 954
+Palíndromo: CCGG | tamanho: 4 | posições: 263
+Palíndromo: AATT | tamanho: 4 | posições: 113, 157, 403, 472, 599, 692, 737, 951, 981
+Palíndromo: CATG | tamanho: 4 | posições: 277, 423
+Palíndromo: TCGA | tamanho: 4 | posições: 299, 663, 935
+Palíndromo: ACGT | tamanho: 4 | posições: 538
+
+Sequência 5:
+Palíndromo: GATC | tamanho: 4 | posições: 900, 1116, 1964
+Palíndromo: CGCG | tamanho: 4 | posições: 834, 1243, 1245, 1553
+Palíndromo: GCGC | tamanho: 4 | posições: 109, 1552, 1724
+Palíndromo: TTAA | tamanho: 4 | posições: 115, 241, 388, 507
+Palíndromo: CATG | tamanho: 4 | posições: 17, 513, 842, 1014, 1256, 1488, 1843
+Palíndromo: AATT | tamanho: 4 | posições: 113, 391, 829, 965, 1036, 1043, 1195, 1200, 1312, 1449, 1523, 1669, 1678, 1698, 1737, 1819
+Palíndromo: GTAC | tamanho: 4 | posições: 812, 888, 1011, 1326
+Palíndromo: TGCA | tamanho: 4 | posições: 125, 515, 1391, 1614
+Palíndromo: GGCC | tamanho: 4 | posições: 231, 653, 1218, 1406
+Palíndromo: ATAT | tamanho: 4 | posições: 313, 808, 1501, 1660, 1728
+Palíndromo: AGCT | tamanho: 4 | posições: 340, 548, 610, 638, 677, 689, 895, 1307, 1718
+Palíndromo: CTAG | tamanho: 4 | posições: 262, 897
+Palíndromo: TCGA | tamanho: 4 | posições: 377, 1837, 1872
+Palíndromo: CCGG | tamanho: 4 | posições: 484, 1350, 1369
+Palíndromo: TATA | tamanho: 4 | posições: 539, 807, 1500, 1829, 1831, 1892
+Palíndromo: ACGT | tamanho: 4 | posições: 628, 796, 1375, 1895
+
+# Teste 2
+
+mulekotd@mulekotd:~/projects/biocomp-uff/exercicio1$ ./program
+Digite o valor de k (par e maior ou igual a 4): 16
+
+Sequência 1:
+Nenhum palindromo foi encontrado com o valor k = 16
+
+Sequência 2:
+Palíndromo: TATAAAACGTTTTATA | tamanho: 16 | posições: 23
+
+Sequência 3:
+Palíndromo: TATAAAACGTTTTATA | tamanho: 16 | posições: 90
+
+Sequência 4:
+Nenhum palindromo foi encontrado com o valor k = 16
+
+Sequência 5:
+Nenhum palindromo foi encontrado com o valor k = 16
+
+# Teste 3
+
+mulekotd@mulekotd:~/projects/biocomp-uff/exercicio1$ ./program
+Digite o valor de k (par e maior ou igual a 4): 18
+
+Sequência 1:
+Nenhum palindromo foi encontrado com o valor k = 18
+
+Sequência 2:
+Nenhum palindromo foi encontrado com o valor k = 18
+
+Sequência 3:
+Nenhum palindromo foi encontrado com o valor k = 18
+
+Sequência 4:
+Nenhum palindromo foi encontrado com o valor k = 18
+
+Sequência 5:
+Nenhum palindromo foi encontrado com o valor k = 18
+
+# Teste 4
+
+mulekotd@mulekotd:~/projects/biocomp-uff/exercicio1$ ./program
+Digite o valor de k (par e maior ou igual a 4): 6
+
+Sequência 1:
+Nenhum palindromo foi encontrado com o valor k = 6
+
+Sequência 2:
+Nenhum palindromo foi encontrado com o valor k = 6
+
+Sequência 3:
+Nenhum palindromo foi encontrado com o valor k = 6
+
+Sequência 4:
+Palíndromo: CCATGG | tamanho: 6 | posições: 906
+Palíndromo: AACGTT | tamanho: 6 | posições: 854
+Palíndromo: CAGCTG | tamanho: 6 | posições: 411
+Palíndromo: AATATT | tamanho: 6 | posições: 370
+Palíndromo: ACATGT | tamanho: 6 | posições: 326
+Palíndromo: GATATC | tamanho: 6 | posições: 217
+Palíndromo: GAATTC | tamanho: 6 | posições: 742
+Palíndromo: ATTAAT | tamanho: 6 | posições: 199
+Palíndromo: TAATTA | tamanho: 6 | posições: 164
+Palíndromo: ATATAT | tamanho: 6 | posições: 519
+Palíndromo: AAATTT | tamanho: 6 | posições: 133, 269
+Palíndromo: AAGCTT | tamanho: 6 | posições: 53
+
+Sequência 5:
+Palíndromo: TATATA | tamanho: 6 | posições: 1829
+Palíndromo: TTATAA | tamanho: 6 | posições: 1583, 1921
+Palíndromo: AACGTT | tamanho: 6 | posições: 70, 1432
+Palíndromo: GAATTC | tamanho: 6 | posições: 1868
+Palíndromo: TTCGAA | tamanho: 6 | posições: 149
+Palíndromo: GTTAAC | tamanho: 6 | posições: 497, 801
+Palíndromo: TTTAAA | tamanho: 6 | posições: 722
+Palíndromo: ACGCGT | tamanho: 6 | posições: 1909
+Palíndromo: TGATCA | tamanho: 6 | posições: 1484
+Palíndromo: ATTAAT | tamanho: 6 | posições: 867
+Palíndromo: TTGCAA | tamanho: 6 | posições: 670
+Palíndromo: ACATGT | tamanho: 6 | posições: 729
+Palíndromo: AAATTT | tamanho: 6 | posições: 1084
+Palíndromo: GCTAGC | tamanho: 6 | posições: 1715
+Palíndromo: TAATTA | tamanho: 6 | posições: 1135
+Palíndromo: CGCGCG | tamanho: 6 | posições: 1243
+Palíndromo: ACCGGT | tamanho: 6 | posições: 1206
+Palíndromo: GCCGGC | tamanho: 6 | posições: 1215
+
+# Teste 5
+
+mulekotd@mulekotd:~/projects/biocomp-uff/exercicio1$ ./program
+Digite o valor de k (par e maior ou igual a 4): 2
+[Debug] k deve ser par e maior ou igual a 4.

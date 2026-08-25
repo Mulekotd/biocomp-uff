@@ -5,6 +5,7 @@
 #include <unordered_map>
 #include <vector>
 
+// Gera a fita complementar de uma sequência de DNA.
 std::string generateAntiparallel(const std::string& dna)
 {
     static const std::unordered_map<char, char> complement = {
@@ -33,11 +34,13 @@ std::unordered_map<std::string, std::vector<std::size_t>> findMaxDNAPalindromes(
     {
         std::size_t left = center - 1;
         std::size_t right = center;
+
         std::size_t bestStart = 0;
         std::size_t bestLength = 0;
 
         while (true)
         {
+            // Equivale a comparar dna[left] com o complemento de dna[right].
             if (dna[left] != antiparallel[dna.size() - 1 - right])
                 break;
 
@@ -49,7 +52,6 @@ std::unordered_map<std::string, std::vector<std::size_t>> findMaxDNAPalindromes(
                 bestLength = length;
             }
 
-            // Não é possível expandir mais.
             if (left == 0 || right + 1 == dna.size())
                 break;
 
@@ -57,7 +59,7 @@ std::unordered_map<std::string, std::vector<std::size_t>> findMaxDNAPalindromes(
             ++right;
         }
 
-        // Imprime somente palíndromos maximais com tamanho exatamente igual a k.
+        // Guarda apenas os palíndromos maximais com tamanho exatamente k.
         if (bestLength == static_cast<std::size_t>(k))
             palindromes[dna.substr(bestStart, bestLength)].push_back(bestStart + 1);
     }
@@ -92,19 +94,24 @@ int main(void)
 
     int sequence = 1;
 
-    // Extrai cada linha do dataset
+    // Cada linha do dataset é tratada como uma sequência de DNA separada.
     while (std::getline(file, dna))
     {
-        // 1o: Acha a cadeia antiparalela do DNA (3′ → 5′)
+        // Complemento base a base
         std::string antiparallel = generateAntiparallel(dna);
 
-        // 2o: Inverte a cadeia antiparalela
+        // Inverte a fita complementar reversa (3′ → 5′ lida de trás pra frente = 5′ → 3′)
         std::reverse(antiparallel.begin(), antiparallel.end());
 
-        // 3o: Encontra todos os palindromos maximais de tamanho k
         auto palindromes = findMaxDNAPalindromes(dna, antiparallel, k);
 
         std::println("\nSequência {}:", sequence++);
+        
+        if (palindromes.size() == 0)
+        {
+            std::println("Nenhum palindromo foi encontrado com o valor k = {}", k);
+            continue;
+        }
 
         for (const auto& [palindrome, positions] : palindromes)
         {
