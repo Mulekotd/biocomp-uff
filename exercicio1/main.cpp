@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 
     int k;
 
-    std::print("Digite o valor de k (par e maior ou igual a 4): ");
+    std::print("Digite o valor de k: ");
     std::cin >> k;
 
     if (k < 4 || k % 2 != 0)
