@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
     if (argc != 2)
     {
         std::println(std::cerr, "Uso: {} <caminho-do-dataset>", argv[0]);
-        return -1;
+        return EXIT_FAILURE;
     }
 
     const std::string path = argv[1];
@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
     if (k < 4 || k % 2 != 0)
     {
         std::println("[Debug] k deve ser par e maior ou igual a 4.");
-        return -1;
+        return EXIT_FAILURE;
     }
 
     std::ifstream file(path);
@@ -93,7 +93,7 @@ int main(int argc, char* argv[])
     if (!file.is_open())
     {
         std::println("[Debug] Não foi possível abrir o arquivo indicado.");
-        return -1;
+        return EXIT_FAILURE;
     }
 
     std::string dna; // Cadeia do DNA (5′ → 3′)
@@ -130,5 +130,5 @@ int main(int argc, char* argv[])
         }
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }
