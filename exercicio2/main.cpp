@@ -17,12 +17,12 @@ static const std::unordered_map<char, char> baseComplement = {
 };
 
 // Verifica na entrada do dataset se a linha é um comentário
-bool isCommentary(const std::string line) {
+bool isCommentary(const std::string& line) {
     return line.starts_with("#");
 }
 
 // Verifica se duas subcadeias são palindromicas
-bool isReverseComplement(int k, const std::string prefix, const std::string suffix) {
+bool isReverseComplement(int k, const std::string& prefix, const std::string& suffix) {
     int isComplementary = true;
 
     // Partindo do inicio do prefixo
@@ -42,7 +42,7 @@ bool isReverseComplement(int k, const std::string prefix, const std::string suff
     return isComplementary;
 }
 
-std::unordered_map<int, std::string> findHairpins(int k, const std::string dna) {
+std::unordered_map<int, std::string> findHairpins(int k, const std::string& dna) {
     std::unordered_map<int, std::string> hairpins;
 
     const int maxHeadLength = k - 1;
@@ -110,12 +110,10 @@ int main(int argc, char *argv[]) {
 
         hairpins = findHairpins(k, line);
 
-        std::println("\nSequência: {}", sequence);
+        std::println("\nSequência: {}", sequence++);
 
         for (const auto& [position, hairpin] : hairpins)
             std::println("Posição: {} | Grampo: {} | Tamanho: {}", position, hairpin, hairpin.length());
-
-        sequence++;
     }
 
     return EXIT_SUCCESS;

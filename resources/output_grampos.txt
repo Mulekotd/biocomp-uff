@@ -1,0 +1,78 @@
+# Teste 1
+mulekotd@mulekotd:~/projects/biocomp-uff$ ./builds/bin/exercicio2 "exercicio2/dataset.txt" 
+Digite o valor de k: 6
+
+Sequência: 1
+Posição: 11 | Grampo: TGGTAACGAACTTACCA | Tamanho: 17
+
+Sequência: 2
+Posição: 9521 | Grampo: AGGAACCAATAGTTCCT | Tamanho: 17
+Posição: 9059 | Grampo: ACTTTCTTATGAAAGT | Tamanho: 16
+Posição: 382 | Grampo: AAAAGATTCTCTTTT | Tamanho: 15
+Posição: 1563 | Grampo: AATATGATGCCATATT | Tamanho: 16
+Posição: 9453 | Grampo: TTTGAAAATTTCAAA | Tamanho: 15
+Posição: 2812 | Grampo: AAAATATAATATTTT | Tamanho: 15
+Posição: 2609 | Grampo: TTGAAAGATTTTCAA | Tamanho: 15
+Posição: 2674 | Grampo: CCAACACAAATTGTTGG | Tamanho: 17
+Posição: 4091 | Grampo: GTTTTAGGCCTTAAAAC | Tamanho: 17
+Posição: 3888 | Grampo: AAAATTCCTAATTTT | Tamanho: 15
+Posição: 1446 | Grampo: TTGTTGAAGACAACAA | Tamanho: 16
+Posição: 4172 | Grampo: TTGATTGAAGAATCAA | Tamanho: 16
+Posição: 6181 | Grampo: TAAATTTAATAAATTTA | Tamanho: 17
+Posição: 7501 | Grampo: ACTATAACTTATAGT | Tamanho: 15
+Posição: 2227 | Grampo: AAATGCACTGGGCATTT | Tamanho: 17
+Posição: 8288 | Grampo: TTTAAAGAGCTTTAAA | Tamanho: 16
+
+# Teste 2
+mulekotd@mulekotd:~/projects/biocomp-uff$ ./builds/bin/exercicio2 "exercicio2/dataset.txt" 
+Digite o valor de k: 5
+
+Sequência: 1
+Posição: 58 | Grampo: GTGATTTGATCAC | Tamanho: 13
+
+Sequência: 2
+Posição: 9922 | Grampo: AAGCGATACCGCTT | Tamanho: 14
+Posição: 1888 | Grampo: AAGTTTTCAACTT | Tamanho: 13
+Posição: 3889 | Grampo: AAATTCCTAATTT | Tamanho: 13
+Posição: 1516 | Grampo: CATTGCAAGCAATG | Tamanho: 14
+Posição: 1564 | Grampo: ATATGATGCCATAT | Tamanho: 14
+Posição: 1447 | Grampo: TGTTGAAGACAACA | Tamanho: 14
+Posição: 2610 | Grampo: TGAAAGATTTTCA | Tamanho: 13
+Posição: 9454 | Grampo: TTGAAAATTTCAA | Tamanho: 13
+Posição: 4144 | Grampo: TAATTTTGAAATTA | Tamanho: 14
+Posição: 4173 | Grampo: TGATTGAAGAATCA | Tamanho: 14
+Posição: 1170 | Grampo: TTGGAATTTCCAA | Tamanho: 13
+Posição: 2813 | Grampo: AAATATAATATTT | Tamanho: 13
+Posição: 1692 | Grampo: TAGAAAGTTTCTA | Tamanho: 13
+Posição: 9348 | Grampo: AAATTGACAATTT | Tamanho: 13
+Posição: 1144 | Grampo: ATACTTTGAAGTAT | Tamanho: 14
+Posição: 912 | Grampo: TAAAAAAGGTTTTA | Tamanho: 14
+Posição: 1059 | Grampo: TAGGGAATGCCCTA | Tamanho: 14
+Posição: 6183 | Grampo: AATTTAATAAATT | Tamanho: 13
+Posição: 6879 | Grampo: AGAAACACTTTTCT | Tamanho: 14
+Posição: 205 | Grampo: TATTAAACTTAATA | Tamanho: 14
+Posição: 7007 | Grampo: AGAAACTGATTTCT | Tamanho: 14
+Posição: 7502 | Grampo: CTATAACTTATAG | Tamanho: 13
+Posição: 7706 | Grampo: ATTTCACCGAAAT | Tamanho: 13
+Posição: 8223 | Grampo: CAATCTACGATTG | Tamanho: 13
+Posição: 383 | Grampo: AAAGATTCTCTTT | Tamanho: 13
+Posição: 4513 | Grampo: TTCTAGAATTAGAA | Tamanho: 14
+Posição: 8289 | Grampo: TTAAAGAGCTTTAA | Tamanho: 14
+Posição: 6300 | Grampo: GTATATACTATAC | Tamanho: 13
+Posição: 8306 | Grampo: AAAAGGTTCTTTT | Tamanho: 13
+Posição: 9060 | Grampo: CTTTCTTATGAAAG | Tamanho: 14
+
+# Teste 3
+mulekotd@mulekotd:~/projects/biocomp-uff$ ./builds/bin/exercicio2 "exercicio2/dataset.txt" 
+Digite o valor de k: 7
+
+Sequência: 1
+
+Sequência: 2
+Posição: 9677 | Grampo: GACAAAAAACTCGTTTTGTC | Tamanho: 20
+Posição: 9520 | Grampo: TAGGAACCAATAGTTCCTA | Tamanho: 19
+Posição: 8287 | Grampo: GTTTAAAGAGCTTTAAAC | Tamanho: 18
+Posição: 6181 | Grampo: TAAATTTAATAAATTTA | Tamanho: 17
+Posição: 4171 | Grampo: TTTGATTGAAGAATCAAA | Tamanho: 18
+Posição: 4090 | Grampo: TGTTTTAGGCCTTAAAACA | Tamanho: 19
+Posição: 2673 | Grampo: ACCAACACAAATTGTTGGT | Tamanho: 19
