@@ -99,16 +99,16 @@ int main(int argc, char *argv[]) {
     // Verifica se o arquivo foi aberto corretamente
     assert(file.is_open());
 
-    std::string line;
+    std::string dna;
     std::unordered_map<int, std::string> hairpins; // Mapeia a posição e seu respectivo grampo
 
     int sequence = 1;
 
-    while (std::getline(file, line)) {
-        if (isCommentary(line))
+    while (std::getline(file, dna)) {
+        if (dna.empty() || isCommentary(dna))
             continue;
 
-        hairpins = findHairpins(k, line);
+        hairpins = findHairpins(k, dna);
 
         std::println("\nSequência: {}", sequence++);
 
